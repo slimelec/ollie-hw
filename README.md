@@ -1,3 +1,3 @@
-# ollie-hw
+# Ollie Hardware
 
 Coming soon.
