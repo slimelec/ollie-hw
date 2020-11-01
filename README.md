@@ -34,8 +34,11 @@ Once you connect ollie to a Windows machine, you should be able to see 4 COM por
 <img src="https://github.com/slimelec/ollie-hw/blob/master/images/ollie_2x7_pinout.png" width=200>
 
 ## CAN
+<img src="https://github.com/slimelec/ollie-hw/blob/master/images/ollie-front-sel-sw.png">
 
-Ollie runs dual CAN firmware, it can be used with candleLight or SLCAN firmware.
+Ollie runs dual CAN firmware, it can be used with candleLight or slcan firmware.
+
+Setting the dip to postion 1 (as shown in the picture) will enable candleLight. Postion 2 enables slcan. Switch must be set before the Micro USB is plugged in.
 
 #### Note: CAN Bus termination resistor(120R) can be enabled by setting the dip switch. Refer to [pinout](#pinout)
 
