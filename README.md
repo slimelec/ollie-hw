@@ -24,7 +24,7 @@ Firmware is based on [cantact-fw](https://github.com/slimelec/cantact-fw) and [c
 4. Connect USB and flash firmware
 
 ## UART
-Based on XR21V1414 4-ch USB to UART chip. Drivers are available [Here](https://www.maxlinear.com/product/interface/uarts/usb-uarts/xr21v1414)
+Based on XR21V1414 4-ch USB to UART chip. Drivers are available [**Here**](https://www.maxlinear.com/product/interface/uarts/usb-uarts/xr21v1414)
 
 Once you connect ollie to a Windows machine, you should be able to see 4 COM port channels in the device manager.
 
@@ -44,9 +44,9 @@ Setting the dip to postion 1 (as shown in the picture) will enable candleLight. 
 
 ### 1- candleLight
 
-On windows you can use with Cangaroo app. Download link available [Here](https://github.com/slimelec/ollie-hw/releases/download/v0.1/cangaroo-win32-0363ce7.zip). For linux you can compile it yourself, source available [Here](https://github.com/normaldotcom/cangaroo/)
+On windows you can use with Cangaroo app. Download link available [**Here**](https://github.com/slimelec/ollie-hw/releases/download/v0.1/cangaroo-win32-0363ce7.zip). For linux you can compile it yourself, source available [**Here**](https://github.com/normaldotcom/cangaroo/)
 #### candleLight Python 
-Python drivers are available [Here](https://pypi.org/project/candle-driver/)
+Python drivers are available [**Here**](https://pypi.org/project/candle-driver/)
 
 #### candleLight on Linux
 candleLight is natively supported under linux using gs_usb driver. Just plug it in and using this command:
@@ -54,10 +54,10 @@ candleLight is natively supported under linux using gs_usb driver. Just plug it 
 ```ip link set can0 up type can bitrate 500000```
 
 ### 2- slcan
-On windows you can use CANtact app. Download link available [Here](https://github.com/linklayer/cantact-app/releases/download/v0.3.0-alpha/cantact-v0.3.0-alpha.zip)
+On windows you can use CANtact app. Download link available [**Here**](https://github.com/linklayer/cantact-app/releases/download/v0.3.0-alpha/cantact-v0.3.0-alpha.zip)
 
 #### slcan Python 
-python-can library documentation is available [Here](https://python-can.readthedocs.io/en/master/)
+python-can library documentation is available [**Here**](https://python-can.readthedocs.io/en/master/)
 
 
 
