@@ -10,7 +10,7 @@
 Hardware files coming soon.
 
 ### Pinout:
-![Pinout](https://github.com/slimelec/ollie-hw/blob/master/images/ollie-pinout.jpg)
+![Pinout](https://github.com/slimelec/ollie-hw/blob/master/images/Ollie_Pinout2.png)
 
 ## Firmware
 Firmware is based on [cantact-fw](https://github.com/slimelec/cantact-fw) and [candleLight_fw](https://github.com/slimelec/candleLight_fw) combined into a single binary file. The firmware can be selected using the dip switch (FW SEL), setting the switch ON the device will boot with candlelight_fw, if switched OFF it will boot with cantact-fw.
