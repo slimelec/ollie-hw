@@ -43,8 +43,11 @@ Setting the dip to postion 1 (as shown in the picture) will enable candleLight. 
 #### Note: CAN Bus termination resistor(120R) can be enabled by setting the dip switch. Refer to [pinout](#pinout)
 
 ### 1- candleLight
+<img src="https://github.com/slimelec/ollie-hw/blob/master/images/MIcrobus.PNG">
 
-On windows you can use with Cangaroo app. Download link available [**Here**](https://github.com/slimelec/ollie-hw/releases/download/v0.1/cangaroo-win32-0363ce7.zip). For linux you can compile it yourself, source available [**Here**](https://github.com/normaldotcom/cangaroo/)
+candleLight firmware is compatible with MicroBus app (by [codenocold](https://github.com/codenocold/microbus)), which is available for [Windows](https://github.com/slimelec/ollie-hw/releases/tag/v0.2) and [Ubuntu](https://github.com/slimelec/ollie-hw/releases/tag/v0.2).
+
+On windows you can also use with Cangaroo app. Download link available [**Here**](https://github.com/slimelec/ollie-hw/releases/download/v0.1/cangaroo-win32-0363ce7.zip). For linux you can compile it yourself, source available [**Here**](https://github.com/normaldotcom/cangaroo/)
 #### candleLight Python 
 Python drivers are available [**Here**](https://pypi.org/project/candle-driver/)
 
