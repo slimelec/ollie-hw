@@ -24,11 +24,25 @@ Firmware is based on [cantact-fw](https://github.com/slimelec/cantact-fw) and [c
 4. Connect USB and flash firmware
 
 ## UART
-Based on XR21V1414 4-ch USB to UART chip. Drivers are available [**Here**](https://www.maxlinear.com/product/interface/uarts/usb-uarts/xr21v1414)
+Based on XR21V1414 4-ch USB to UART chip. Drivers are available [**Here**](https://www.maxlinear.com/support/design-tools/software-drivers)
 
+#### Windows
 Once you connect ollie to a Windows machine, you should be able to see 4 COM port channels in the device manager.
 
 ![dm](https://github.com/slimelec/ollie-hw/blob/master/images/dev_manager.png)
+
+#### Linux
+On Linux you should see four devices created, typically /dev/ttyXRUSB[0-3]. If you see /dev/ttyACM[0-3], there is a chance the UART might not behave correctly in this case you need to install drivers by following these steps:
+1. \# git clone https://github.com/niosHD/xr_usb_serial_common-1c
+2. \# make *(on raspberry pi make sure you have the [kernel headers](https://www.raspberrypi.org/documentation/linux/kernel/headers.md) installed)*
+3. \# cp -a ../xr_usb_serial_common-1a /usr/src/
+4. \# dkms add -m xr_usb_serial_common -v 1a
+5. \# dkms build -m xr_usb_serial_common -v 1a
+6. \# dkms install -m xr_usb_serial_common -v 1a
+7. \# echo blacklist cdc-acm > /etc/modprobe.d/blacklist-cdc-acm.conf
+8. \# update-initramfs -u
+9. Now plug in ollie.
+
 #### Note: RS485 is connected to Ch C and RS232 is connected to Ch D. RS485 Bias(220R) and Termination resister(120R) can be enables using the dip switch. Refer to [pinout](#pinout)
 
 <img src="https://github.com/slimelec/ollie-hw/blob/master/images/ollie_2x7_pinout.png" width=200>
