@@ -7,7 +7,9 @@
 5. [CAN](#can)
 
 ### Hardware:
-Hardware files coming soon.
+- [Schematic_Ollie_v159r1.pdf](https://github.com/slimelec/ollie-hw/blob/master/hardware/Schematic_Ollie_v159r1.pdf)
+- [Schematic_Ollie_DB9_v141r1.pdf](https://github.com/slimelec/ollie-hw/blob/master/hardware/Schematic_Ollie_DB9_v141r1.pdf)
+
 
 ### Pinout:
 ![Pinout](https://github.com/slimelec/ollie-hw/blob/master/images/Ollie_Pinout2.png)
