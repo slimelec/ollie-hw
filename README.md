@@ -35,7 +35,7 @@ Once you connect ollie to a Windows machine, you should be able to see 4 COM por
 
 #### Linux
 On Linux you should see four devices created, typically /dev/ttyXRUSB[0-3]. If you see /dev/ttyACM[0-3], there is a chance the UART might not behave correctly in this case you need to install drivers by following these steps:
-1. \# git clone https://github.com/brendanhoran/xr_usb_serial_common-1a
+1. \# git clone https://github.com/brendanhoran/xr_usb_serial_common
 2. \# make *(on raspberry pi make sure you have the [kernel headers](https://www.raspberrypi.org/documentation/linux/kernel/headers.md) installed)*
 3. \# cp -a ../xr_usb_serial_common-1a /usr/src/
 4. \# dkms add -m xr_usb_serial_common -v 1a
