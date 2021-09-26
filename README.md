@@ -22,10 +22,12 @@ Firmware is based on [cantact-fw](https://github.com/slimelec/cantact-fw) and [c
 #### Flashing new firmware
 <img src="https://github.com/slimelec/ollie-hw/blob/master/images/jumper.png" width=400>|<img src="https://github.com/slimelec/ollie-hw/blob/master/images/Prog.png" width=400>
 
-1. Download [firmware](https://github.com/slimelec/ollie-hw/blob/master/firmware/ollie_v120.bin)
-2. Install [stm32cubeprog](https://www.st.com/en/development-tools/stm32cubeprog.html)
-3. Set the jumper to enter bootloader mode.
-4. Connect USB and flash firmware
+1. Download:
+    - [**Default firmware**](https://github.com/slimelec/ollie-hw/blob/master/firmware/ollie_v120.bin)
+    - or [**PCAN firmware**](https://github.com/slimelec/ollie-hw/releases/download/v0.3/pcan-ollie.zip)
+3. Install [stm32cubeprog](https://www.st.com/en/development-tools/stm32cubeprog.html)
+4. Set the jumper to enter bootloader mode.
+5. Connect USB and flash firmware
 
 ## UART
 Based on XR21V1414 4-ch USB to UART chip. Drivers are available [**Here**](https://www.maxlinear.com/support/design-tools/software-drivers)
@@ -58,6 +60,7 @@ Ollie runs dual CAN firmware, it can be used with candleLight or slcan firmware.
 
 Setting the dip to postion 1 (as shown in the picture) will enable candleLight. Postion 2 enables slcan. Switch must be set before the Micro USB is plugged in.
 
+Ollie can also run (Peak CAN) PCAN firmware, follow the [**instruction**](#firmware)  to update the firmware.
 #### Note: CAN Bus termination resistor(120R) can be enabled by setting the dip switch. Refer to [pinout](#pinout)
 
 ### 1- candleLight
@@ -79,6 +82,11 @@ On windows you can use CANtact app. Download link available [**Here**](https://g
 
 #### slcan Python 
 python-can library documentation is available [**Here**](https://python-can.readthedocs.io/en/master/)
+
+### 3- PCAN
+When flashed with PCAN firmware ollie can be used with PCAN-View or other softwares such as BUSMASTER.
+
+![image](https://user-images.githubusercontent.com/12411993/134793947-3f438850-a828-4bf4-91df-38e4286959fd.png)
 
 
 
