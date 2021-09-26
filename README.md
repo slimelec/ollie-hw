@@ -84,7 +84,7 @@ On windows you can use CANtact app. Download link available [**Here**](https://g
 python-can library documentation is available [**Here**](https://python-can.readthedocs.io/en/master/)
 
 ### 3- PCAN
-When flashed with PCAN firmware ollie can be used with PCAN-View or other softwares such as BUSMASTER.
+When flashed with [**PCAN-USB firmware**](https://github.com/slimelec/ollie-hw#firmware) ollie can be used with PCAN-View or other softwares such as BUSMASTER.
 
 ![image](https://user-images.githubusercontent.com/12411993/134793947-3f438850-a828-4bf4-91df-38e4286959fd.png)
 
