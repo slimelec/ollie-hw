@@ -14,6 +14,8 @@
 ### Pinout:
 ![Pinout](https://github.com/slimelec/ollie-hw/blob/master/images/Ollie_Pinout2.png)
 
+- **UARTA** and **UARTB** voltage level can be set using slide switch (1V8, 3V3 and 5V).
+- **RS232 RX** and **RS232 TX** pins ±12V. **RS232 RX** Absolute Max **±25V**.
 ## Firmware
 Firmware is based on [cantact-fw](https://github.com/slimelec/cantact-fw) and [candleLight_fw](https://github.com/slimelec/candleLight_fw) combined into a single binary file. The firmware can be selected using the dip switch (FW SEL), setting the switch ON the device will boot with candlelight_fw, if switched OFF it will boot with cantact-fw.
 
