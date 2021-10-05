@@ -29,7 +29,7 @@ Firmware is based on [cantact-fw](https://github.com/slimelec/cantact-fw) and [c
 
 1. Download:
     - [**Default firmware**](https://github.com/slimelec/ollie-hw/blob/master/firmware/ollie_v120.bin)
-    - or [**PCAN firmware**](https://github.com/slimelec/ollie-hw/releases/download/v0.3/pcan-ollie.zip)
+    - or [**PCAN emulator firmware**](https://github.com/slimelec/ollie-hw/releases/download/v0.3/pcan-ollie.zip)
 3. Install [stm32cubeprog](https://www.st.com/en/development-tools/stm32cubeprog.html)
 4. Set the jumper to enter bootloader mode.
 5. Connect USB and flash firmware
