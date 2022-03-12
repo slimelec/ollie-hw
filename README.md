@@ -44,15 +44,45 @@ Once you connect ollie to a Windows machine, you should be able to see 4 COM por
 
 #### Linux
 On Linux you should see four devices created, typically /dev/ttyXRUSB[0-3]. If you see /dev/ttyACM[0-3], there is a chance the UART might not behave correctly in this case you need to install drivers by following these steps:
-1. \# git clone https://github.com/brendanhoran/xr_usb_serial_common
-2. \# make *(on raspberry pi make sure you have the [kernel headers](https://www.raspberrypi.org/documentation/linux/kernel/headers.md) installed)*
-3. \# cp -a ../xr_usb_serial_common-1a /usr/src/
-4. \# dkms add -m xr_usb_serial_common -v 1a
-5. \# dkms build -m xr_usb_serial_common -v 1a
-6. \# dkms install -m xr_usb_serial_common -v 1a
-7. \# echo blacklist cdc-acm > /etc/modprobe.d/blacklist-cdc-acm.conf
-8. \# update-initramfs -u
-9. Now plug in ollie.
+
+_Optional_ Raspberry PI kernel headers setup:
+
+Check for correct kernel headers:
+```
+ls /lib/modules/$(uname -r)/build
+```
+
+If not, install the kernel
+```
+sudo apt install raspberrypi-kernel-headers
+```
+
+You may also need to bump to the latest kernel version
+```
+sudo apt upgrade
+sudo reboot
+```
+
+Main installation:
+
+```
+sudo apt install dkms
+git clone https://github.com/brendanhoran/xr_usb_serial_common xr_usb_serial_common-1a 
+cd xr_usb_serial_common-1a
+make
+
+sudo -s
+cp udev_rules/ollie.rules /etc/udev/rules.d/
+cp udev_rules/ollie-plug.sh /usr/local/bin/
+cp -a ../xr_usb_serial_common-1a /usr/src/
+dkms add -m xr_usb_serial_common -v 1a
+dkms build -m xr_usb_serial_common -v 1a
+dkms install -m xr_usb_serial_common -v 1a
+update-initramfs -u
+exit
+
+sudo reboot
+```
 
 #### Note: RS485 is connected to Ch C and RS232 is connected to Ch D. RS485 Bias(220R) and Termination resister(120R) can be enables using the dip switch. Refer to [pinout](#pinout)
 
